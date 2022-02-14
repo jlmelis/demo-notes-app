@@ -5,7 +5,7 @@ import AuthStack from './AuthStack';
 export default function main(app) {
   const storageStack = new StorageStack(app, 'storage');
 
-  new ApiStack(app, 'api', {
+  const apiStack = new ApiStack(app, 'api', {
     table: storageStack.table,
   });
 

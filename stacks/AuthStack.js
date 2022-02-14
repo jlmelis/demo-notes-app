@@ -35,7 +35,7 @@ export default class AuthStack extends sst.Stack {
 
         // Show the auth resources in the output
         this.addOutputs({
-            Region: scope.Region,
+            Region: scope.region,
             UserPoolId: this.auth.cognitoUserPool.userPoolId,
             IndentityPoolId: this.auth.cognitoCfnIdentityPool.ref,
             UserPoolClientId: this.auth.cognitoUserPoolClient.userPoolClientId,
